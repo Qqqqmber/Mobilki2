@@ -75,7 +75,6 @@ class _NotesPageState extends State<NotesPage> {
     setState(() {
       _notes.removeAt(index);
       if (_editingIndex == null) {
-        // ничего не редактируем — ок
       } else if (_editingIndex == index) {
         _editingIndex = null;
         _controller.clear();
